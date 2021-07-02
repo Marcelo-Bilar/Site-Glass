@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+@font-face {
+    font-family: 'FonteImg';
+    src: url("../_fonts/computer-font.ttf");
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+a{
+    text-decoration: none;
+    color: #606060;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    font-family: verdana, sans-serif;
+    font-size: 10pt;
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+}
+div#interface {
+    width: 900px;
+    position: relative;
+    background-color: white;
+    margin: -20px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+header#cabecalho img#icone {
+    position: absolute;
+    left: 750px;
+    top: 50px;
+}
+header#cabecalho {
+    border-bottom: 1px black solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    margin-top: 0px;
+}
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    transition: .4s;
+}
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+figure.foto-legenda:hover img {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    transition: .5s;
+}
+figure.foto-legenda figcaption p{
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    text-shadow: 1px 1px 8px black;
+    font-weight: bold;
+
+}
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .5s;
+    cursor: pointer;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    left: 300px;
+}
+nav#menu li{
+    display: inline-block;
+    background-color:#dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: 1s;
+}
+nav#menu li:hover {
+    background-color: #606060;
+    transition: .5s;
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+section#corpoPrincipal {
+    display: block;
+    float: left;
+    width: 430px;
+    height: 1510px;
+    border-right: 1px solid;
+    padding: 20px;
+}
+article#noticia-principal h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+header#cabecalho-artigo h1{
+    font-family: 'fonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita {
+    text-align: right;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 11px;
+    color: #606060;
+}
+
+table#tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce{
+    color: white;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd{
+    background-color: #cecece;
+
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 11pt;
+    font-weight: bolder;
+}
+table#tabelaspec caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 7pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;
+    float: right;
+    width: 400px;
+    top: 0px;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid;
+    width: 900px;
+    height: 50px;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+footer#rodape p {
+    text-align: center;
+    color: #888888;
+    padding-bottom: 10px;
+}
+
+footer#rodape a {
+    text-decoration: none;
+    color: #888888;
+}
+
+footer#rodape a:hover {
+    text-decoration: underline;
+}
+
+video#filme2 {
+    display: block;
+    width: 440px;
+}
